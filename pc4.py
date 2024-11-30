@@ -60,7 +60,7 @@ col1, col2 = st.columns(2)
 # Las columnas creadas se asignan a las variables col1 y col2.
 
 # En la primera columna colocamos la imagen
-col1.image("2.jpg", caption="Esta chica me representa al escuchar música" , width=300)
+col1.image("perfil.png", caption="Esta chica me representa al escuchar música" , width=300)
 
 # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
 # La función image toma como primer argumento la ruta de la imagen que se va a mostrar. 
@@ -135,12 +135,12 @@ st.markdown("<h2 style='text-align: center;'>Explicación de un tema de las clas
 # unsafe_allow_html=True: Este es un argumento opcional en la función markdown.
 
 # Agregamos un video a la aplicación web ( menor a 20 MB)
-st.video("E.mp4")
+# st.video("E.mp4")
 # st.video("ppc-2024-1.mp4"): Esta línea está agregando un video a la aplicación web.
 
 
 # Agregamos un enlace a la página web donde está el video.
-enlace = f'<a href="https://drive.google.com/file/d/1jyRBnax8gT_Q7YL_R3jKm0ZUOp21qWyP/view" target="_blank"><button>Nombre creativo para el botón</button></a>'
+enlace = f'<a href="https://drive.google.com/file/d/1jyRBnax8gT_Q7YL_R3jKm0ZUOp21qWyP/view" target="_blank"><button>Haz click para ver mi video</button></a>'
 st.markdown(enlace, unsafe_allow_html=True)
 # f'<a href="URL" target="_blank"><button>Nombre</button></a>':
 # La etiqueta <a> se utiliza para crear un enlace en HTML.
@@ -175,15 +175,15 @@ grafico_seleccionado = sidebar.selectbox('Selecciona un gráfico', graficos)
 # Mostramos el gráfico seleccionado
 if grafico_seleccionado == 'Primer gráfico':
     sidebar.markdown("<div style='text-align: justify'>Por un lado, el primer gráfico muestra la frecuencia de goles anotados por Milán de acuerdo al número de goles que anotó tanto de local como de visitante.</div>", unsafe_allow_html=True)
-    sidebar.image("aisladas_base_datos.png", caption='Lenguas aisladas', width=500)
+    sidebar.image("i1.png", caption='Gráfico 1', width=500)
     pass
 elif grafico_seleccionado == 'Segundo gráfico':
     sidebar.markdown("<div style='text-align: justify'>Por otro lado, el segundo gráfico muestra el promedio de goles anotados como visitantes por Inter y Juventus.</div>", unsafe_allow_html=True)
-    sidebar.image("lengua_familia_GB.png", caption='Familias lingüísticas', width=500)
+    sidebar.image("i2.png", caption='Gráfico 2', width=500)
     pass
 elif grafico_seleccionado == 'Tercer gráfico':
     sidebar.markdown("<div style='text-align: justify'>Finalmente, el último gráfico muestra el promedio de tarjetas rojas recibidas como visitante por equipos de la liga italiana.</div>", unsafe_allow_html=True)
-    sidebar.image("mapa_familias_aisladas_S.jpg", caption='Mapa de las lenguas sudamericanas', width=500)
+    sidebar.image("i3.png", caption='Gráfico 3', width=500)
     pass
 
 # if grafico_seleccionado == 'Gráfico de Macroareas': Esta línea verifica si la opción seleccionada es 'Gráfico de Macroareas'.
